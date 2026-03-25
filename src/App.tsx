@@ -25,6 +25,9 @@ function App() {
           <a className="news-post-btn" href="/single-post-1"></a>
         </div>
       </div>
+      <div className='relative flex size-400 border-1 border-solid'>
+        <div className='size-[50px] rounded-[10px] absolute top-[10px] left-[10px] text-red bg-black'>Test</div>
+      </div>
     </>
   )
 }
