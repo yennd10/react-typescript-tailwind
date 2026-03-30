@@ -2,6 +2,7 @@
 
 @theme {
   --text: #6b6375;
+  --var-columns: minmax(0, 3fr) minmax(0, 2.5fr) minmax(0, 2.5fr) minmax(0, 2fr);
 }
 
 @layer base {
@@ -28,6 +29,10 @@
     /* grid grid-cols-[200px_1fr] gap-[20px] 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     */
+  }
+
+  .box-small {
+    @apply rounded-lg bg-red-500 p-4;
   }
 }
 

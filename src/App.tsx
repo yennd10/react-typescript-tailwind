@@ -25,8 +25,16 @@ function App() {
           <a className="news-post-btn" href="/single-post-1"></a>
         </div>
       </div>
-      <div className='relative flex size-400 border-1 border-solid'>
-        <div className='size-[50px] rounded-[10px] absolute top-[10px] left-[10px] text-red bg-black'>Test</div>
+      <p>Gid ---- grid-cols-* --- gap-number ---  children -- col-span*/row-span*</p>
+      <p>Gid ---- grid-rows-* --- gap-number ---  children -- grid-flow-col --- [200px_minmax(100px,1fr)_100px]</p>
+      <p>class="grid grid-flow-col auto-cols-[minmax(200px,1fr)] gap-4"</p>
+      <div className='grid grid-cols-(--var-columns) gap-4'>
+        <div className='col-start-1 col-end-4 box-small'>01</div>
+        <div className='box-small'>02</div>
+        <div className='box-small'>03</div>
+        <div className='box-small col-span-2'>04</div>
+        <div className='box-small'>05</div>
+        <div className='box-small'>06</div>
       </div>
     </>
   )
